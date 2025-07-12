@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import ColorInput from './ColorInput';
-import ColorAlert from './ColorAlert';
+import ColorText from './ColorText';
 
 function ParentColorComp() {
     const [color, setColor] = useState('');
@@ -8,7 +8,7 @@ function ParentColorComp() {
     return (
         <div>
             <ColorInput onColorChange={setColor} />
-            <ColorAlert color={color} />
+            <ColorText color={color} />
         </div>
     )
 }
